@@ -1,4 +1,5 @@
 @media screen and (max-width: 450px) {
+
   .header {
     flex-direction: column;
     height: 100vh;
@@ -11,7 +12,7 @@
     height: 100vh;
   }
   .first-content img {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
   }
@@ -49,4 +50,48 @@
     width: 200px;
     height: 200px;
   }
+  .card-2{
+    flex-direction: column;
+  }
+  .inear-card-1 img{
+    width: 100vw;
+  }
+  .inear-card-2{
+    text-align: center;
+  }
+  .dynamic-ranking nav ul{
+    flex-direction: column;
+  }
+  .six-sec{
+    flex-direction: column;
+    line-height: 30px;
+    text-align: center;
+  }
+  .six-right img{
+    width: 100vw;
+  }
+  .seven-section{
+    margin-top: 800px;
+    
+  }
+  .shop-content h1 {
+    font-size: 20px;
+  }
+  .shop-content{
+    line-height: 30px;
+  }
+  .shop-image{
+    object-fit: cover;
+    height: 50vh;
+  }
+  .shop-content button{
+    margin-top: 20px;
+  }
+  
+.seven-h1{
+  font-size: 20px;
+}
+.details h1 {
+  font-size: 20px;
+}
 }

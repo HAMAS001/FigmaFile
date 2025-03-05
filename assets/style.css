@@ -3,9 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: trade;
+  /* border: 1px solid black; */
 }
-.container{
-  /* max-width: 1300px; */
+.container {
+  max-width: 1300px;
+  padding-inline: 20px;
 }
 
 html,
@@ -16,6 +18,10 @@ body {
 @font-face {
   font-family: trade;
   src: url(/assets/fonts/Trade\ Gothic\ LT\ Bold.ttf);
+}
+@font-face {
+  font-family: gothik;
+  src: url(./fonts/Trade\ Gothic\ LT\ Bold\ Extended.ttf);
 }
 .header {
   display: flex;
@@ -81,7 +87,9 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-.comprehensive h1{font-size: 40px;}
+.comprehensive h1 {
+  font-size: 40px;
+}
 .grid-main {
   display: flex;
   justify-content: space-around;
@@ -93,23 +101,133 @@ body {
   width: 100px;
 }
 .card {
-  flex-basis:18%;
+  flex-basis: 18%;
 }
 .card p {
   margin: 0.5rem 0;
 }
-.delvary img{
-    width: 300px;
+.delvary img {
+  width: 300px;
 }
-.delvary{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(20, 147, 245, 1);
-    height: 200PX;
-    margin-top: 200px;
+.delvary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(20, 147, 245, 1);
+  height: 200px;
+  margin-top: 200px;
 }
-.delvary h1{
-    font-size: 55px;
-    color: aliceblue;
+.delvary h1 {
+  font-size: 55px;
+  color: aliceblue;
+}
+.fifth-section {
+  margin-top: 100px;
+}
+.card-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  font-family: gothik;
+}
+.inear-card-1 img {
+  width: 30vw;
+  height: 60vh;
+}
+.inear-card-2 span {
+  color: rgba(20, 147, 245, 1);
+}
+.inear-card-2 h1 {
+  font-size: 40px;
+}
+.inear-card-2 {
+  flex-basis: 500px;
+}
+.Successful {
+  flex-direction: row-reverse;
+}
+.six-section h1 {
+  text-align: center;
+}
+.dynamic-ranking nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dynamic-ranking nav ul li {
+  list-style: none;
+  padding-bottom: 18px;
+  border-bottom: 2px solid;
+  padding-top: 20px;
+}
+.six-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 100px;
+}
+.six-right img {
+  width: 30vw;
+  height: 50vh;
+}
+.six-section {
+  height: 100vh;
+  margin-top: 100px;
+}
+.activ {
+  color: rgba(20, 147, 245, 1);
+}
+.six-left p {
+  padding: 20px 0;
+}
+.six-left {
+  flex-basis: 500px;
+}
+.six-btn {
+  margin: 20px auto;
+}
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+.seven-h1{
+  font-size: 50px;
+}
+.details h1 {
+  font-size: 60px;
+}
+.seven-section {
+  background: rgba(20, 147, 245, 1);
+  text-align: center;
+  padding: 30px 10px;
+  color: aliceblue;
+  width: 100%;
+  margin-top: 100px;
+}
+.shop-image {
+  width: 80%;
+  height: 60vh;
+  /* margin: 0 auto; */
+
+  margin-top: 50px;
+  border-radius: 20px;
+  filter: brightness(30%) contrast(120%) grayscale(10%);
+}
+.online-shop {
+  position: relative;
+}
+.shop-content {
+  color: aliceblue;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 50px;
+}
+.shop-content h1 {
+  font-size: 50px;
 }
