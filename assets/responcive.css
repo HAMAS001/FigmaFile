@@ -1,12 +1,66 @@
 @media screen and (max-width: 450px) {
-
   .header {
     flex-direction: column;
+    align-items: center;
     height: 100vh;
-    justify-content: space-evenly;
-    text-align: center;
+   text-align: center;
+   justify-content: space-between ;
+   line-height: 100px;
     display: none;
-    z-index: 9999px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    right: 0px;
+    transition: 2s;
+    z-index: 1;
+    -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInRight {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInRight {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  .menu-btn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .close-btn {
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: aliceblue;
+    font-size: 30px;
   }
   .first-content {
     height: 100vh;
@@ -46,52 +100,87 @@
   .delvary h1 {
     font-size: 20px;
   }
-  .delvary img{
+  .delvary img {
     width: 200px;
     height: 200px;
   }
-  .card-2{
+  .card-2 {
     flex-direction: column;
   }
-  .inear-card-1 img{
+  .inear-card-1 img {
     width: 100vw;
   }
-  .inear-card-2{
+  .inear-card-2 {
     text-align: center;
   }
-  .dynamic-ranking nav ul{
+  .dynamic-ranking nav ul {
     flex-direction: column;
   }
-  .six-sec{
+  .six-sec {
     flex-direction: column;
     line-height: 30px;
     text-align: center;
   }
-  .six-right img{
-    width: 100vw;
+  .six-right img {
+    width: 95vw;
   }
-  .seven-section{
+  .seven-section {
     margin-top: 800px;
-    
+    width: 98vw;
   }
   .shop-content h1 {
     font-size: 20px;
   }
-  .shop-content{
+  .shop-content {
     line-height: 30px;
   }
-  .shop-image{
+  .shop-image {
     object-fit: cover;
     height: 50vh;
+    width: 100%;
   }
-  .shop-content button{
+  .shop-content button {
     margin-top: 20px;
   }
-  
-.seven-h1{
-  font-size: 20px;
-}
-.details h1 {
-  font-size: 20px;
-}
+
+  .seven-h1 {
+    font-size: 20px;
+  }
+  .details h1 {
+    font-size: 20px;
+  }
+  .long{
+    flex-direction: column;
+    text-align: center;
+  }
+  .long-left img{
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+     margin-bottom: 30px;
+  }
+  .long-rigth{
+    flex-basis: 500px;
+  }
+  .long-rigth h1{
+    font-size: 20px;
+  }
+  .long-rigth p{
+   font-size: 15px;
+  }
+  .these-slow{
+    background: rgba(245, 245, 245, 1);
+    text-align: center;
+    margin: 0 auto;
+  }
+  .nine-left h1{
+    font-size: 30px;
+  }
+  .nine-section{
+    flex-direction: column;
+    text-align: center;
+  }
+  .nine-right img{
+    width: 100%;
+  }
 }
